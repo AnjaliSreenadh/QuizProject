@@ -1,0 +1,65 @@
+{##}
+{#{% load static %}#}
+{##}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>result</title>#}
+{#	<link rel="stylesheet" type="text/css" href="{% static 'css/styleresult.css' %}">#}
+{##}
+{#</head>#}
+{##}
+{#<body>#}
+{#<!--	<h1>Results</h1>-->#}
+{#	<p>Your Score is {{tot_mark}}%</p>#}
+{#	{% if tot_mark > 50 %}#}
+{#		<p>Congrats..!!You are qualified..</p>#}
+{#	{% else %}#}
+{#		<p>You are not qualified...!!</p>#}
+{#	{% endif %}#}
+{##}
+{#	<ol>#}
+{#		{% for i in questions %}#}
+{#			<li> {{ i.que }} <br><br> Correct answer: {{ i.corr_ans }} <br><br><br> </li>#}
+{#		{% endfor %}#}
+{#	</ol>#}
+{##}
+{#</body>#}
+{##}
+{##}
+{#</html>#}
+{##}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styleresult.css' %}">
+
+</head>
+
+<body>
+
+	<p>Your Score is {{tot_mark}}%</p>
+	{% if tot_mark > 50 %}
+		<p>Congrats..!!You are qualified..</p>
+	{% else %}
+		<p>You are not qualified...!!</p>
+	{% endif %}
+
+	<ol>
+		{% for i in questions %}
+			<li> {{ i.que }} <br><br> Correct answer: {{ i.corr_ans }} <br><br><br> </li>
+		{% endfor %}
+	</ol>
+<a href="{% url 'logout' %}" class="logout-button" >Logout</a>
+</body>
+
+
+</html>
+

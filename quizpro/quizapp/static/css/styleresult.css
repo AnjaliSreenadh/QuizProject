@@ -1,0 +1,44 @@
+body {
+	background-image: url('https://i2.wp.com/zeevector.com/wp-content/uploads/Background/Orange-Background-with-Light-effects.png?fit=2047,782&ssl=1');
+	background-size: cover;
+	background-color:darkkhaki;
+	background-position: center;
+	font-family: sans-serif;
+	font-weight:bolder;
+	font-size: large;
+
+}
+h1 {
+	color: navy;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: xxx-large;
+
+}
+p{
+	color:darkslateblue;
+	text-align: center;
+	font-size: xxx-large;
+}
+ol{
+	margin-left:300px;
+}
+
+
+
+
+
+.logout-button {
+position: absolute;
+right: 550px;
+top: 1270px;
+background-color: grey;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+

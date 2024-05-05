@@ -1,0 +1,82 @@
+{#{% load static %}#}
+{##}
+{##}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>home</title>#}
+{#     <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">#}
+{##}
+{#</head>#}
+{#<body><div class="header">#}
+{#   <div class="logo">#}
+{#    <a href="{% url 'home' %}">#}
+{#      <img src="https://drive.google.com/file/d/1LZF3iHBUwHLjPZAbz7ytsMXettP191aY/view?usp=sharing" alt="Logo">#}
+{#    </a>#}
+{#  </div>#}
+{##}
+{#  <div class="links">#}
+{#    <a href="{% url 'login' %}">Login</a>#}
+{#    <a href="{% url 'signup' %}">Signup</a>#}
+{#  </div>#}
+{#</div>#}
+{#<div class="welcome">#}
+{#  <h1>Welcome to the Quiz!</h1>#}
+{#</div>#}
+{#<p>#}
+{#    Welcome to our quiz application, where you can test your knowledge and compete with others in a fun and engaging way! Our application offers a wide range of quizzes on Python Django Framework. With a user-friendly interface and a vast question bank, you'll never run out of challenges. Create an account to track your progress, earn badges, and climb the leaderboard. Whether you're a trivia buff or just looking for a brain-teaser, our quiz application has something for everyone.#}
+{##}
+{#</p>#}
+{##}
+{##}
+{##}
+{##}
+{#</body>#}
+{#</html>#}
+{##}
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+     <link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+
+</head>
+<body><div class="header">
+
+
+  <div class="links">
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'signup' %}">Signup</a>
+  </div>
+</div>
+<div class="welcome">
+  <h1>Welcome to the Quiz!</h1>
+</div>
+<p>
+
+    <p class="background-image">
+<br><br><br>
+    Welcome to our quiz application, where you can test your knowledge and compete with others in a fun and engaging way! Our application offers a wide range of quizzes on Python Django Framework. With a user-friendly interface and a vast question bank, you'll never run out of challenges. Create an account to track your progress, earn badges, and climb the leaderboard. Whether you're a trivia buff or just looking for a brain-teaser, our quiz application has something for everyone.
+
+</p>
+<div class="footer">
+	<p>© 2023 [Your Name] All Rights Reserved</p>
+	<p><a href="mailto:your@email.com">Contact us</a></p>
+	<p>Powered by <a href="(link unavailable)">Django</a></p>
+	<p>Thanks for visiting!</p>
+
+</div>
+
+
+
+
+</body>
+</html>
+

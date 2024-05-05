@@ -1,0 +1,43 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body bgcolor="#faebd7">
+<div class="header">
+
+	<h1>Quiz</h1>
+	<h2>Category: Python Django-Multiple Choice Quiz</h2>
+		<div class="header-right">
+		<h4>Number of Questions:10<hr>Cutoff Score:50%</h4>
+<!--		<h4>Qualifying Cutoff Marks:50%</h4>-->
+	</div>
+
+		</div>
+
+<br><br><br><br>
+	<form method="post">
+		{% csrf_token %}
+		{% for i in questions %}
+			<p>{{ i.id }}. {{ i.que }}</p>
+			<p>
+				<input type="radio" name="sel{{i.id}}" value="{{ i.opt1 }}"> {{ i.opt1 }}<br><br>
+				<input type="radio" name="sel{{i.id}}" value="{{ i.opt2 }}"> {{ i.opt2 }}<br><br>
+				<input type="radio" name="sel{{i.id}}" value="{{ i.opt3 }}"> {{ i.opt3 }}<br><br>
+				<input type="radio" name="sel{{i.id}}" value="{{ i.opt4 }}"> {{ i.opt4 }}<br><br>
+			</p>
+		{% endfor %}
+		<button type="submit">Submit</button>
+		<button type="reset">Clear</button>
+
+	</form>
+
+</body>
+</html>
+
